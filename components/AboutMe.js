@@ -15,13 +15,8 @@ export default function AboutMe() {
             className="leading-loose text-2xl md:text-4xl font-semibold  mx-4"
             style={{ lineHeight: "3rem" }}
           >
-            {userData.about.title}. Currently working on{" "}
-            <a
-              className="bg-red-500 rounded-md px-2 py-1 text-white"
-              href={userData.about.currentProjectUrl}
-            >
-              {userData.about.currentProject} ✈️
-            </a>
+            {userData.about.title}. Currently working on Aws services and DApps
+            ✈️
           </p>
         </div>
       </div>
@@ -72,10 +67,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     Facebook
-                  </p>
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -84,10 +79,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     Twitter
-                  </p>
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -96,10 +91,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     GitHub
-                  </p>
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -108,10 +103,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                     LinkedIn
-                  </p>
+                  </div>
                 </a>
               </div>
               <div className="flex flex-row justify-start items-center">
@@ -120,10 +115,10 @@ export default function AboutMe() {
                   className="flex flex-row items-center space-x-4 group"
                 >
                   <div className="my-4">&rarr;</div>
-                  <p className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
+                  <div className="text-lg text-gray-500 font-mono relative overflow-hidden dark:text-gray-300">
                     <div className="absolute h-0.5 w-full bg-gray-400 bottom-0 transform -translate-x-28 group-hover:translate-x-0 transition duration-300"></div>
                     Instagram
-                  </p>
+                  </div>
                 </a>
               </div>
             </div>
@@ -148,7 +143,7 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/java/java.png"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/GraphQL_Logo.svg/1200px-GraphQL_Logo.svg.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
@@ -164,11 +159,11 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/angular/angular.png"
+                src="https://images.ctfassets.net/po4qc9xpmpuh/3LKPgAL1A9JEZuoxehHw3n/ae77470349d852a5e5d8240e5aa21045/fauna-twitter-card.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"
+                src="https://miro.medium.com/max/13334/1*RJs-ufPYhfbJaugiKtoOZA.png"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
@@ -184,11 +179,35 @@ export default function AboutMe() {
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
-                src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mysql/mysql.png"
+                src="https://www.troispointzero.fr/content/uploads/2020/04/storybook-e1586160084363.jpg"
                 className="h-20 w-20 mx-4 my-4"
               />
               <img
                 src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/mongodb/mongodb.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://pbs.twimg.com/profile_images/1135999619781939201/HZ-pCQcP_400x400.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_oracle.jpg"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://yculz33w9skgdkhey8rajqm6-wpengine.netdna-ssl.com/wp-content/uploads/2017/08/snap-logo-amazon-dynamo-db.jpg"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://pbs.twimg.com/profile_images/1114309924551417856/FKA4cm2x.png"
+                className="h-20 w-20 mx-4 my-4"
+              />
+              <img
+                src="https://miro.medium.com/max/640/1*B9CIOrxdROHvtdmouQA1_A.png"
                 className="h-20 w-20 mx-4 my-4"
               />
             </div>

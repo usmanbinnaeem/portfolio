@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
-import Link from "next/link";
-import getLatestRepos from "@lib/getLatestRepos";
+import axios from "axios";
+import useFetch from "use-http";
 import userData from "@constants/data";
 
-export default function LatestCode({ repositories }) {
+export default function LatestCode() {
+  const { get, loading, error, data } = useFetch("https://api.github.com");
   const [repos, setRepos] = useState([]);
 
-  useEffect(async () => {
-    // let latestRepos = await getLatestRepos(userData);
-    // console.log("latestRepos", latestRepos);
-    setRepos(repositories);
+  useEffect(() => {
+    get("/users/usmanbinnaeem/repos").then((res) => {
+      setRepos(
+        res?.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 9)
+      );
+    });
   }, []);
   return (
     <section className="bg-[#F1F1F1] -mt-40 dark:bg-gray-900 pb-40">

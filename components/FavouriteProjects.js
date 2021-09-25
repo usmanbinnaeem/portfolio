@@ -54,17 +54,17 @@ export default function FavouriteProjects() {
           </a>
 
           <a
-            href="https://www.djlightingdiscount.com/"
-              className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
+            href="https://covid-19-analytics.netlify.app/"
+            className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
           >
             <div className="relative overflow-hidden" >
               <img
-                src="/djlightingdiscount.png"
-                alt="Ecommerce"
-               className="transform hover:scale-125 transition duration-2000 ease-out"
+                src="/covid.png"
+                alt="covid"
+                className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-               Ecommerce website
+                Covid-19 Tracker
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 03
@@ -73,19 +73,20 @@ export default function FavouriteProjects() {
           </a>
           {/* Single card */}
           <a
-            href="https://covid-19-analytics.netlify.app/"
-className="w-full block col-span-3 sm:col-span-1  object-cover"
+            
+            href="https://www.djlightingdiscount.com/"
+            className="w-full block col-span-3 sm:col-span-1  object-cover"
           
           >
             <div className="relative overflow-hidden shadow-2xl">
               <img
-                src="/covid.png"
-                alt="covid"
- className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
+                src="/djlightingdiscount.png"
+                alt="Ecommerce"
+                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
                 
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
-                Covid-19 Tracker
+               Ecommerce website
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 02

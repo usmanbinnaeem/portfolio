@@ -103,7 +103,7 @@ const userData = {
       desc: "Mathematics, Computer Science, Chemistry, Physics",
     },
   ],
-  resumeUrl: "",
+  resumeUrl: "/resume.pdf",
   socialLinks: {
     instagram: "https://www.instagram.com/usm_an.1/",
     twitter: "https://twitter.com/usmanbinnaeem",

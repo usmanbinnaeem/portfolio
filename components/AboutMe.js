@@ -48,10 +48,10 @@ export default function AboutMe() {
                 check my{" "}
                 <a
                   href={userData.resumeUrl}
-                  target="__blank"
+                  download
                   className="text-gray-800 border-b-2 border-gray-800 dark:border-gray-300 font-bold dark:text-gray-300"
                 >
-                  CV
+                  Resume
                 </a>{" "}
                 and I'd love to work for you.
               </p>

@@ -9,6 +9,11 @@ const userData = {
   address: "Abbottabad, Pakistan",
   projects: [
     {
+      title: "DJ lighting Discount",
+      link: "https://www.djlightingdiscount.com/",
+      imgUrl: "/djlightingdiscount.png",
+    },
+    {
       title: "SpaceX App (PWA)",
       link: "https://spacex-application.netlify.app/",
       imgUrl: "/spaceX-app.png",
@@ -51,10 +56,10 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a Fullstack JAM-Stack Serverless Sass Web Application developer love to build cloud based Sass App and APIs and web applications. I am CS 3rd year Student at Comsats Universty. Living in the city of pines Abbottabad",
+      "I'm a Fullstack Serverless JAM-Stack SaaS Web Application developer love to build cloud based SaaS App and APIs and web applications. I am CS 3rd year Student at Comsats Universty. Living in the city of pines Abbottabad",
     description: [
-      `I've been spending last few months to build cloud based Sass Apps and Apis. I currently getting training at panacloud to get Ready for the API Token Economy. This is my current major Area's.`,
-      `I am also focusing on blockchain and cryptocurrency thats going to make next big change in Finance (DEx && DeFi), Healthcare , Art (NFT), Decentralized organizations and all those sectors where we can't trust anybody.`,
+      `I've been spending last few months to build cloud based SaaS Apps and APIs. I currently getting training at panacloud to get Ready for the API Token Economy. This is my current major Area's.`,
+      `I am also focusing on blockchain and cryptocurrency thats going to make next big change in Finance (DeX && DeFi), Healthcare , Art (NFT), Decentralized organizations and all those sectors where we can't trust anybody.`,
       `I am always happy to learn and work with new technologies to make my own First Unicorn Startup.`,
     ],
     currentProject: "",
@@ -67,7 +72,7 @@ const userData = {
       company: "Panacloud",
       year: "jan,2021 - present",
       companyLink: "https://www.panacloud.ai/",
-      desc: "getting training at panacloud to get Ready for the API Token Economy",
+      desc: "I currently getting training at panacloud to get Ready for the API Token Economy",
     },
     {
       title: "Freelancing",
@@ -85,45 +90,7 @@ const userData = {
     },
     {
       title: "Higher Education",
-      company: "The Hope college Wagcantt",
-      year: "2017",
-      companyLink: "/experience",
-      desc: "Mathematics, Computer Science, Physics",
-    },
-    {
-      title: "High School",
-      company: "F.G Model public high School, Wahcantt",
-      year: "2015",
-      companyLink: "/experience",
-      desc: "Mathematics, Computer Science, Chemistry, Physics",
-    },
-  ],
-  experience: [
-
-    {
-      title: "Internship",
-      company: "Panacloud",
-      year: "jan,2021 - present",
-      companyLink: "https://www.panacloud.ai/",
-      desc: "getting training at panacloud to get Ready for the API Token Economy",
-    },
-    {
-      title: "Freelancing",
-      company: "Wordpress",
-      year: "july,2020 - Feb,2021",
-      companyLink: "https://www.djlightingdiscount.com/",
-      desc: "customized layout, plugin and fix errors",
-    },
-    {
-      title: "Graduation",
-      company: "Comsats Institute of Information and Technology",
-      year: "2019 - present",
-      companyLink: "https://www.cuiatd.edu.pk/",
-      desc: "Web Technology, Machine Learning, Cloud Development",
-    },
-    {
-      title: "Higher Education",
-      company: "The Hope college Wagcantt",
+      company: "The Hope college Wahcantt",
       year: "2017",
       companyLink: "/experience",
       desc: "Mathematics, Computer Science, Physics",

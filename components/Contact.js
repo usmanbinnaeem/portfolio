@@ -1,33 +1,37 @@
 import React, { useState } from 'react'
 import userData from '@constants/data'
-// import axios from 'axios'
-// import FormData from 'form-data'
-import { FormData } from 'formdata-polyfill/esm.min.js'
 
 export default function Contact() {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
+  const [formData, setFormData] = useState({})
   const [message, setMessage] = useState('')
 
-  const scriptURL =
-    'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec'
+  const handleInput = (e) => {
+    const copyFormData = { ...formData }
+    copyFormData[e.target.name] = e.target.value
+    setFormData(copyFormData)
+  }
 
-  const onSubmit = (e) => {
+  const sendData = async (e) => {
     e.preventDefault()
-    const obj = { name, email, message }
-
-    // axios
-    //   .post(
-    //     'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec',
-    //     obj,
-    //   )
-    //   .then((response) => {
-    //     console.log(response)
-    //   })
-
-      fetch(scriptURL, { method: 'POST', body: new FormData(obj) })
-        .then((response) => console.log(response))
-        .catch((error) => console.log(error))
+    const { name, email, message } = formData
+    try {
+      const response = await fetch(
+        'https://v1.nocodeapi.com/usmanbinnaeem/google_sheets/OlmRRORpEWutYSxP?tabId=portfolio',
+        {
+          method: 'post',
+          body: JSON.stringify([[name, email, message]]),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        },
+      )
+      const json = await response.json()
+      console.log('Success:', JSON.stringify(json))
+      setMessage('Success')
+    } catch (error) {
+      console.error('Error:', error)
+      setMessage('Error')
+    }
   }
 
   return (
@@ -170,7 +174,10 @@ export default function Contact() {
             </div>
           </div>
           <form
-            name="portfolio"
+            id="contact"
+            name="contact"
+            required
+            onSubmit={sendData}
             className="form rounded-lg bg-white p-4 flex flex-col"
           >
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
@@ -178,9 +185,7 @@ export default function Contact() {
               Your Name
             </label>
             <input
-              onChange={(e) => {
-                setName(e.target.value)
-              }}
+              onChange={handleInput}
               type="text"
               id="name"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
@@ -191,9 +196,7 @@ export default function Contact() {
               Email
             </label>
             <input
-              onChange={(e) => {
-                setEmail(e.target.value)
-              }}
+              onChange={handleInput}
               type="text"
               id="email"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
@@ -207,9 +210,7 @@ export default function Contact() {
               Message
             </label>
             <textarea
-              onChange={(e) => {
-                setMessage(e.target.value)
-              }}
+              onChange={handleInput}
               rows="4"
               type="text"
               id="message"
@@ -217,10 +218,11 @@ export default function Contact() {
               name="message"
               required
             ></textarea>
+            {/* <input name="submit" type="submit" value="Send"  className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold" /> */}
             <button
+              name="submit"
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
-              onClick={onSubmit}
             >
               Send Message
             </button>

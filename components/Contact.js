@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import userData from '@constants/data'
 // import axios from 'axios'
-import FormData from 'form-data'
+// import FormData from 'form-data'
+import { FormData } from 'formdata-polyfill/esm.min.js'
 
 export default function Contact() {
   const [name, setName] = useState('')

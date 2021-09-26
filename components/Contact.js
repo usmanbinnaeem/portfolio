@@ -1,7 +1,22 @@
-import React from "react";
-import userData from "@constants/data";
+import React from 'react'
+import userData from '@constants/data'
 
 export default function Contact() {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [message, setMessage] = useState('')
+
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec'
+
+  const onSubmit = (e) => {
+    e.preventDefault()
+    const obj = { name, email, message }
+    fetch(scriptURL, { method: 'POST', body: new FormData(obj) })
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error))
+  }
+
   return (
     <section>
       <div className="max-w-6xl mx-auto h-48 bg-white dark:bg-gray-800 antialiased">
@@ -141,23 +156,36 @@ export default function Contact() {
               </a>
             </div>
           </div>
-          <form className="form rounded-lg bg-white p-4 flex flex-col">
+          <form
+            name="portfolio"
+            className="form rounded-lg bg-white p-4 flex flex-col"
+          >
             <label htmlFor="name" className="text-sm text-gray-600 mx-4">
-              {" "}
+              {' '}
               Your Name
             </label>
             <input
+              onChange={(e) => {
+                setName(e.target.value)
+              }}
               type="text"
+              id="name"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="name"
+              required
             />
             <label htmlFor="email" className="text-sm text-gray-600 mx-4 mt-4">
               Email
             </label>
             <input
+              onChange={(e) => {
+                setEmail(e.target.value)
+              }}
               type="text"
+              id="email"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="email"
+              required
             />
             <label
               htmlFor="message"
@@ -166,14 +194,20 @@ export default function Contact() {
               Message
             </label>
             <textarea
+              onChange={(e) => {
+                setMessage(e.target.value)
+              }}
               rows="4"
               type="text"
+              id="message"
               className="font-light rounded-md border focus:outline-none py-2 mt-2 px-1 mx-4 focus:ring-2 focus:border-none ring-blue-500"
               name="message"
+              required
             ></textarea>
             <button
               type="submit"
               className="bg-blue-500 rounded-md w-1/2 mx-4 mt-8 py-2 text-gray-50 text-xs font-bold"
+              onClick={onSubmit}
             >
               Send Message
             </button>
@@ -181,5 +215,5 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  );
+  )
 }

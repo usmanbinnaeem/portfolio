@@ -28,6 +28,7 @@ export default function Contact() {
       const json = await response.json()
       console.log('Success:', JSON.stringify(json))
       setMessage('Success')
+      setFormData({})
     } catch (error) {
       console.error('Error:', error)
       setMessage('Error')

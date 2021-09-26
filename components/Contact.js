@@ -13,11 +13,13 @@ export default function Contact() {
   const onSubmit = (e) => {
     e.preventDefault()
     const obj = { name, email, message }
+    headers = { 'Content-Type':'application/json'}
 
     axios
       .post(
         'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec',
         obj,
+        headers
       )
       .then((response) => {
         console.log(response)

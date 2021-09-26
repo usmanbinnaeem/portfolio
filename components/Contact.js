@@ -1,33 +1,32 @@
 import React, { useState } from 'react'
 import userData from '@constants/data'
-import axios from 'axios'
+// import axios from 'axios'
+import FormData from 'form-data'
 
 export default function Contact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
 
-  // const scriptURL =
-  //   'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec'
+  const scriptURL =
+    'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec'
 
   const onSubmit = (e) => {
     e.preventDefault()
     const obj = { name, email, message }
-    headers = { 'Content-Type':'application/json'}
 
-    axios
-      .post(
-        'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec',
-        obj,
-        headers
-      )
-      .then((response) => {
-        console.log(response)
-      })
+    // axios
+    //   .post(
+    //     'https://script.google.com/macros/s/AKfycbzw8DVx7ywjyzvVlyIMc499S0-THJzqGWcWw4ymKlxZ15DCImpNojxmS9RlIZyAzViGmw/exec',
+    //     obj,
+    //   )
+    //   .then((response) => {
+    //     console.log(response)
+    //   })
 
-    //   fetch(scriptURL, { method: 'POST', body: new FormData(obj) })
-    //     .then((response) => console.log(response))
-    //     .catch((error) => console.log(error))
+      fetch(scriptURL, { method: 'POST', body: new FormData(obj) })
+        .then((response) => console.log(response))
+        .catch((error) => console.log(error))
   }
 
   return (

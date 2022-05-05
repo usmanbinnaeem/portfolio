@@ -16,12 +16,12 @@ const userData = {
     {
       title: "Sbzlaundry",
       link: "http://sbzlaundry.com/",
-      imgUrl: "/tlprolighting.png",
+      imgUrl: "/sbzlaundry.png",
     },
     {
       title: "Tlprolighting",
       link: "https://tlprolighting.com/",
-      imgUrl: "/sbzlaundry.png",
+      imgUrl: "/tlprolighting.png",
     },
     {
       title: "DJ lighting Discount",
@@ -91,9 +91,6 @@ const userData = {
       title: "Internship",
       company: "Panacloud",
       year: "jan,2021 - apr,2020",
-      title: "Internship",
-      company: "Panacloud",
-      year: "jan,2021 - present",
       companyLink: "https://www.panacloud.ai/",
       desc: "I currently getting training at panacloud to get Ready for the API Token Economy",
     },

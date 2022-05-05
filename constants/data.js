@@ -90,7 +90,7 @@ const userData = {
     {
       title: "Internship",
       company: "Panacloud",
-      year: "jan,2021 - apr,2020",
+      year: "jan,2021 - apr,2022",
       companyLink: "https://www.panacloud.ai/",
       desc: "I currently getting training at panacloud to get Ready for the API Token Economy",
     },

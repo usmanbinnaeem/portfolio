@@ -9,7 +9,6 @@ const userData = {
   address: "Abbottabad, Pakistan",
   projects: [
     {
-<<<<<<< HEAD
       title: "Simply Bella",
       link: "https://simplybellasalonandspa.com/",
       imgUrl: "/simplybella.png",
@@ -25,8 +24,6 @@ const userData = {
       imgUrl: "/sbzlaundry.png",
     },
     {
-=======
->>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
       title: "DJ lighting Discount",
       link: "https://www.djlightingdiscount.com/",
       imgUrl: "/djlightingdiscount.png",
@@ -73,12 +70,7 @@ const userData = {
     },
   ],
   about: {
-    title:
-<<<<<<< HEAD
-      "Passionate and result oriented professional. Having indepth knowledge about modern tools and technologies. Highly organized individual who believes in teamwork, highly adoptable, fast learner and effective communicator. I am a computer science undergrad student with an obsession with modern web technologies. I am quite confident with Javascript, React, Nodejs, Python, Graphql, AWS(cdk) and related technologies. Other then that I try to learn new technologies everyday to grow my arsenal.I am CS 3rd year Student at Comsats University. Living in the city of pines Abbottabad. Currently working on Aws services and DApps ✈️",
-=======
-      "I'm a Fullstack Serverless JAM-Stack SaaS Web Application developer love to build cloud based SaaS App and APIs and web applications. I am CS 3rd year Student at Comsats Universty. Living in the city of pines Abbottabad",
->>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
+    title:"Passionate and result oriented professional. Having indepth knowledge about modern tools and technologies. Highly organized individual who believes in teamwork, highly adoptable, fast learner and effective communicator. I am a computer science undergrad student with an obsession with modern web technologies. I am quite confident with Javascript, React, Nodejs, Python, Graphql, AWS(cdk) and related technologies. Other then that I try to learn new technologies everyday to grow my arsenal.I am CS 3rd year Student at Comsats University. Living in the city of pines Abbottabad. Currently working on Aws services and DApps ✈️",
     description: [
       `I've been spending last few months to build cloud based SaaS Apps and APIs. I currently getting training at panacloud to get Ready for the API Token Economy. This is my current major Area's.`,
       `I am also focusing on blockchain and cryptocurrency thats going to make next big change in Finance (DeX && DeFi), Healthcare , Art (NFT), Decentralized organizations and all those sectors where we can't trust anybody.`,
@@ -89,7 +81,6 @@ const userData = {
   },
   experience: [
     {
-<<<<<<< HEAD
       title: "Full-Stack Cloud Developer",
       company: "Cybersolx",
       year: "oct,2021 - present",
@@ -100,11 +91,9 @@ const userData = {
       title: "Internship",
       company: "Panacloud",
       year: "jan,2021 - apr,2020",
-=======
       title: "Internship",
       company: "Panacloud",
       year: "jan,2021 - present",
->>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
       companyLink: "https://www.panacloud.ai/",
       desc: "I currently getting training at panacloud to get Ready for the API Token Economy",
     },

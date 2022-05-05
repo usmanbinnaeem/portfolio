@@ -10,7 +10,13 @@
   "dependencies": {
     "axios": "^0.21.4",
     "form-data": "^4.0.0",
+<<<<<<< HEAD
     "formdata-polyfill": "^4.0.8",
+=======
+    "promise-polyfill": "^8.2.0",
+    "formdata-polyfill": "^4.0.8",
+    "whatwg-fetch": "^3.6.2",
+>>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
     "next": "10.x",
     "next-themes": "0.0.15",
     "promise-polyfill": "^8.2.0",

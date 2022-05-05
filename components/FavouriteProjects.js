@@ -57,7 +57,11 @@ export default function FavouriteProjects() {
             href="https://www.djlightingdiscount.com/"
             className="w-full block col-span-3 sm:col-span-1  object-cover"
           >
+<<<<<<< HEAD
             <div className="relative overflow-hidden shadow-2xl">
+=======
+            <div className="relative overflow-hidden" >
+>>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
               <img
                 src="/djlightingdiscount.png"
                 alt="Ecommerce"
@@ -73,17 +77,34 @@ export default function FavouriteProjects() {
           </a>
           {/* Single card */}
           <a
+<<<<<<< HEAD
             href="https://covid-19-analytics.netlify.app/"
             className="w-full block col-span-3  sm:col-span-2 shadow-2xl"
+=======
+            
+            href="https://www.djlightingdiscount.com/"
+            className="w-full block col-span-3 sm:col-span-1  object-cover"
+          
+>>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
           >
             <div className="relative overflow-hidden">
               <img
+<<<<<<< HEAD
                 src="/covid.png"
                 alt="covid"
                 className="transform hover:scale-125 transition duration-2000 ease-out"
               />
               <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
                 Covid-19 Tracker
+=======
+                src="/djlightingdiscount.png"
+                alt="Ecommerce"
+                className="transform hover:scale-125 transition duration-2000 ease-out object-cover shadow-2xl"
+                
+              />
+              <h1 className="absolute top-10 left-10 text-gray-50 font-bold text-xl bg-red-500 rounded-md px-2">
+               Ecommerce website
+>>>>>>> 2bce15c2598439e5c2da5c821c4dd548ba8b24a6
               </h1>
               <h1 className="absolute bottom-10 left-10 text-gray-50 font-bold text-xl">
                 02

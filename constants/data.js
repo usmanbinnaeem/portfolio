@@ -1,13 +1,28 @@
 const userData = {
   githubUsername: "usmanbinnaeem",
   name: "Usman Naeem",
-  designation: "Full-Stack Serverless JAMStack Saas Web Application Developer",
+  designation: "Full-Stack Cloud Developer | Modern Full-Stack Web Application Developer",
   avatarUrl: "/usman.png",
   picUrl: "/usman.jpg",
   email: "usmaanbinnaeem@gmail.com",
   phone: "+92 3155537059",
   address: "Abbottabad, Pakistan",
   projects: [
+    {
+      title: "Simply Bella",
+      link: "https://simplybellasalonandspa.com/",
+      imgUrl: "/simplybella.png",
+    },
+    {
+      title: "Sbzlaundry",
+      link: "http://sbzlaundry.com/",
+      imgUrl: "/tlprolighting.png",
+    },
+    {
+      title: "Tlprolighting",
+      link: "https://tlprolighting.com/",
+      imgUrl: "/sbzlaundry.png",
+    },
     {
       title: "DJ lighting Discount",
       link: "https://www.djlightingdiscount.com/",
@@ -56,7 +71,7 @@ const userData = {
   ],
   about: {
     title:
-      "I'm a Fullstack Serverless JAM-Stack SaaS Web Application developer love to build cloud based SaaS App and APIs and web applications. I am CS 3rd year Student at Comsats Universty. Living in the city of pines Abbottabad",
+      "Passionate and result oriented professional. Having indepth knowledge about modern tools and technologies. Highly organized individual who believes in teamwork, highly adoptable, fast learner and effective communicator. I am a computer science undergrad student with an obsession with modern web technologies. I am quite confident with Javascript, React, Nodejs, Python, Graphql, AWS(cdk) and related technologies. Other then that I try to learn new technologies everyday to grow my arsenal.I am CS 3rd year Student at Comsats University. Living in the city of pines Abbottabad. Currently working on Aws services and DApps ✈️",
     description: [
       `I've been spending last few months to build cloud based SaaS Apps and APIs. I currently getting training at panacloud to get Ready for the API Token Economy. This is my current major Area's.`,
       `I am also focusing on blockchain and cryptocurrency thats going to make next big change in Finance (DeX && DeFi), Healthcare , Art (NFT), Decentralized organizations and all those sectors where we can't trust anybody.`,
@@ -66,18 +81,24 @@ const userData = {
     currentProjectUrl: "",
   },
   experience: [
-
+    {
+      title: "Full-Stack Cloud Developer",
+      company: "Cybersolx",
+      year: "oct,2021 - present",
+      companyLink: "https://www.cybersolx.com/",
+      desc: "Build and maintain websites for startups, businesses and individuals",
+    },
     {
       title: "Internship",
       company: "Panacloud",
-      year: "jan,2021 - present",
+      year: "jan,2021 - apr,2020",
       companyLink: "https://www.panacloud.ai/",
       desc: "I currently getting training at panacloud to get Ready for the API Token Economy",
     },
     {
       title: "Freelancing",
       company: "Wordpress",
-      year: "july,2020 - Feb,2021",
+      year: "july,2020 - Present",
       companyLink: "https://www.djlightingdiscount.com/",
       desc: "customized layout, plugin and fix errors",
     },

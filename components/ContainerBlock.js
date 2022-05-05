@@ -26,7 +26,7 @@ export default function ContainerBlock({ children, ...customMeta }) {
         />
         <link
           rel="canonical"
-          href={`https://yourwebsite.com${router.asPath}`}
+          href={`https://usmannaeem.tk${router.asPath}`}
         />
          <link rel='icon' href='/usman.png' />
         <meta property="og:type" content={meta.type} />
